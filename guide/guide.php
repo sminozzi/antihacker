@@ -37,6 +37,8 @@ login page and they will send you one email.</p>
 4)
 If necessary, (you are unable to login) you can remove this plugin by FTP.&nbsp;Go to 
 folder: wp-content/plugins/ and remove the folder AntiHacker with all files.</p>
+<p style="box-sizing: inherit; border: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: normal; margin: 0px 0px 1.6842em; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(71, 71, 71); font-variant: normal; letter-spacing: normal; line-height: 31.9998px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; ">
+5) Update your\'s Email Alerts at Notification Settings. (Alerts about failed logins and succesfful logins)</p>
 ';
 
 ?>

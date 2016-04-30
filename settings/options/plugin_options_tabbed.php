@@ -34,8 +34,8 @@ $settings['General Settings']['whitelist']['fields'] = $fields;
 
 
 
-
-$msg_email = 'Fill out the email address to send messages. Default it is your\'s WordPress admin email. <br />Then, click save changes.';
+$admin_email = get_option( 'admin_email' ); 
+$msg_email = 'Fill out the email address to send messages.<br />Left Blank to use your default Wordpress email.<br />('.$admin_email.')<br />Then, click save changes.';
 
  
 $settings['Email Settings']['email'] = array('info' => $msg_email );
@@ -47,6 +47,37 @@ $fields[] = array(
 	);
 $settings['Email Settings']['email']['fields'] = $fields;
 
+
+
+
+//$admin_email = get_option( 'admin_email' ); 
+$notificatin_msg = 'Do you want receive alerts? ';
+ 
+$settings['Notifications Settings']['Notifications'] = array('info' => $notificatin_msg );
+$fields = array();
+
+
+$fields[] = array(
+	'type' 	=> 'checkbox',
+	'name' 	=> 'my_checkbox_all_failed',
+	'label' => 'Alert me all Failed Login Attempts'
+	);
+        
+    
+$fields[] = array(
+	'type' 	=> 'radio',
+	'name' 	=> 'my_radio_all_logins',
+	'label' => 'Alert me All Logins',
+	'radio_options' => array(
+		array('value'=>'Yes', 'label' => 'Yes, All'),
+		array('value'=>'No', 'label' => 'No, Alert me Only Not White listed'),
+		)			
+	);    
+    
+    
+    
+    
+$settings['Notifications Settings']['Notifications']['fields'] = $fields;
 
 
 

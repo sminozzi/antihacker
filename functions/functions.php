@@ -73,13 +73,15 @@ function findip()
 function successful_login($user_login)
 {
 
-    global $my_whitelist;
-    //global $my_login_only_whitelist;
-    //global $my_radio_all_logins;
+    global $amy_whitelist;
+    global $my_radio_all_logins;
     global $ip;
     global $admin_email;
 
-    if ( ! whitelisted($ip, $amy_whitelist)) {
+    
+    if (whitelisted($ip, $amy_whitelist) and $my_radio_all_logins <> 'Yes' )
+        { return 1;}
+
             
         $dt = date("Y-m-d H:i:s");
         $dom = $_SERVER['SERVER_NAME'];
@@ -91,7 +93,7 @@ function successful_login($user_login)
         $msg .= 'Domain: ' . $dom . '<br>';
         $msg .= 'Role: ' . $user_login;
         $msg .= '<br>';
-        $msg .= 'Add this IP to your withelist to stop this email';  
+        $msg .= 'Add this IP to your withelist to stop this email and change your Notification Settings.';  
         
         $email_from = 'wordpress@'.$dom;
     
@@ -102,11 +104,11 @@ function successful_login($user_login)
             'X-Mailer: PHP/' . phpversion();
         
         $to = $admin_email;
-        $subject = 'Login at: '.$dom;
+        $subject = 'Login Successful at: '.$dom;
     
         wp_mail( $to, $subject, $msg, $headers, '' );
     
-    }
+  
     
     return 1;
 
@@ -151,4 +153,54 @@ function email_display()
         <br />
         <?     
     }
+    
+    
+    
+    
+    
+function failed_login($user_login)
+{
+
+    global $amy_whitelist;
+    global $my_checkbox_all_failed;
+    global $ip;
+    global $admin_email;
+    
+    
+    if (whitelisted($ip, $amy_whitelist) and $my_checkbox_all_failed <> '1' )
+        { return;}
+    
+            
+        $dt = date("Y-m-d H:i:s");
+        $dom = $_SERVER['SERVER_NAME'];
+    
+        $msg = 'This email was sent from your website '.$dom. ' by the AntiHacker plugin. <br> ';
+    
+        $msg .= 'Date : ' . $dt . '<br>';
+        $msg .= 'Ip: ' . $ip . '<br>';
+        $msg .= 'Domain: ' . $dom . '<br>';
+        $msg .= 'Role: ' . $user_login;
+        $msg .= '<br>';
+        $msg .= 'Failed login'; 
+ 
+        
+        $email_from = 'wordpress@'.$dom;
+    
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    
+        $headers .= "From: ".$email_from. "\r\n" . 'Reply-To: ' . $user_login . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+        
+        $to = $admin_email;
+        $subject = 'Failed Login at: '.$dom;
+    
+        wp_mail( $to, $subject, $msg, $headers, '' );
+    
+   
+    
+    return;
+
+}
+
 ?>

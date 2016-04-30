@@ -2,7 +2,7 @@
 Plugin Name: AntiHacker 
 Plugin URI: http://antihackerplugin.com
 Description: Anti Hacker Plugin. Restrict access to login page to whitelisted IP addresses.
-Version: 1.1
+Version: 1.2
 Text Domain: anti-hacker
 Domain Path: /lang
 Author: Bill Minozzi
@@ -41,7 +41,6 @@ DEALINGS IN THE SOFTWARE.
 
 
 
-
 if (!defined('ABSPATH'))
     exit; // Exit if accessed directly
     
@@ -63,19 +62,35 @@ add_filter("plugin_action_links_$plugin", 'antihacker_plugin_settings_link' );
 require_once (AHPATH . "settings/load-plugin.php");
 require_once (AHPATH . "functions/functions.php");
 
+
+
 $my_whitelist = trim(get_option('my_whitelist'));
 $amy_whitelist = explode(PHP_EOL, $my_whitelist);
 $ip = trim(findip());
 
 
 
-$admin_email = get_option( 'my_email_to' ); 
-    
-;
+$admin_email = trim(get_option( 'my_email_to' )); 
+
+
+$my_radio_all_logins =  get_option('my_radio_all_logins', 'No'); // Alert me All Logins
+$my_checkbox_all_failed =  get_option('my_checkbox_all_failed', '0'); // Alert me all Failed Login Attempts
+
+
+
+
+if(!empty($_POST["myemail"]))
+  {$myemail = $_POST["myemail"];}
+else
+  {$myemail = '';}
+  
+  
+ 
+      
+
 require_once (AHPATH . "settings/options/plugin_options_tabbed.php");
 
 
-// clean email field if is wrong...
 if( ! empty($admin_email))
     if ( ! is_email($admin_email)) {
 
@@ -88,22 +103,21 @@ if( ! empty($admin_email))
 
 if (! whitelisted($ip, $amy_whitelist)) {
     
-   
-    add_action('login_form', 'email_display');
+  
 
-    add_action('wp_authenticate_user', 'validate_email_field', 10, 2);
+     add_action('login_form', 'email_display');
+
+     add_action('wp_authenticate_user', 'validate_email_field', 10, 2);
 
     function validate_email_field($user, $password)
     {
         global $myemail;
+        
 
         if (!is_email($myemail))
             return new WP_Error('wrong_email', 'Please, fill out the email field!');
         else
            {
-            
-                $args = array(
-                );
                 
                 // The Query
                 $user_query = new WP_User_Query( array ( 'orderby' => 'registered', 'order' => 'ASC' ) );
@@ -135,6 +149,9 @@ if (! whitelisted($ip, $amy_whitelist)) {
 
 
 register_activation_hook( __FILE__, 'ah_activated' );
+
 add_action('wp_login', 'successful_login');
 
- ?>
+add_action('wp_login_failed', 'failed_login');
+
+?>
