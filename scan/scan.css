@@ -1,0 +1,40 @@
+#antihacker-scan-id {
+	 margin: .5em;
+	 margin-right: 2em;
+	 background: #fff;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 border-radius: 5px;
+	 -webkit-box-shadow: 0 0 10px #173859;
+	 -moz-box-shadow: 0 0 10px #173859;
+	 box-shadow: 0 0 10px #173859;
+	 width: 650px;
+
+	 padding:10px;
+
+}
+
+.antihacker-scan-container {
+    background: white;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#antihacker_scan_msg {
+
+	padding-left: 0px;
+
+}
+
+.spinner {
+	/* background: url(images/spinner.gif) no-repeat; */
+	background-size: 30px 30px;
+	/* display: inline-block; */
+	visibility: hidden;
+	float: right;
+	vertical-align: middle;
+	opacity: .7;
+	width: 30px !important;
+	height: 30px !important;
+	margin: 4px 10px 0;
+}

@@ -1,0 +1,413 @@
+=== Anti Hacker Plugin ===
+This file contains changelog entries, so we can keep the size of the standard WordPress readme.txt file reasonable.
+
+== Changelog ==
+5.56/57 25-05-10 Small Improvements.
+
+5.55 25-05-07 Small Improvements.
+
+5.54 25-04-19 Let you choose them duration of keep visit's log.
+
+5.52/53 25-04-12 Added File Integrity Checker (verify the integrity of your WordPress core files).
+
+5.51 25-04-01 Improved Diagnose.
+
+5.47/50 25-03-03 Improved Error Management.
+
+5.46 25-02-14 Improved Error Management.
+
+5.44/45 25-02-10 Improved Error Management.
+
+5.43 25-01-21 Remove blank spaces on ativation.
+
+5.42 25-01-20 Clean Hook when deinstall.
+
+5.40/41 25-01-08 Improved Diagnose with AI.
+
+5.38/39 25-01-06 Improved Diagnose with page load.
+
+5.37 24-12-27 Improved Diagnose with page load.
+
+5.34/36 24-12-27 Improved Diagnose with page load.
+
+5.33 24-12-21 Defined Type.
+
+5.32 24-12-21 added chat with IA on deactivation.
+
+5.31 24-12-19 added chat with IA.
+
+5.30 24-10-12 Improved error handle.
+
+5.29 24-09-06 Improved Translation and Dashboard.
+
+5.28 24-09-06 Improved Translation and add Spanish files.
+
+5.27 24-09-05 Improved Translation and add Spanish files.
+
+5.25/26 24-08-12- Dashboard Improvement with tips.
+
+5.22/24 24-08-02- Small Improvements
+
+5.21 24-07-31- Improved Memory Management
+
+5.19/5.20 24-07-30 - Improved Memory Management
+
+5.18 24-06-29 - check for blocked by host $_SERVER['SERVER_NAME'] and $_SERVER['REQUEST_METHOD'] and fixed Undefined variable $antihacker_user_agent_screen_string 
+
+5.17 24-06-29 - Improved Memory Management
+
+5.14/5.16 24-06-29 - Improved Memory Management
+
+5.05 24-03-07 - Improved Memory Management
+
+5.03/04 2024-03-03 - Improved email about abandoned plugins
+
+5.00/5.02 2024-02-23 to 2024-03-03 - Small Improvements and fixed warning.
+
+4.52/53 2024-02-23 - Improved security.
+
+4.51 2024-02-15 - Small Improvements.
+
+4.49/50 2024-02-14 - Small Improvements.
+
+4.47/48 2024-02-10 - Small Improvements with search engines filter.
+
+4.46 2024-01-03 - Small Improvements to avoid deprecated trim().
+
+4.44/45 2024-01-01 - Small Improvements to avoid hosting erase virus signature file.
+
+4.43 2023-12-31 - Small Improvements to avoid hosting erase virus signature file.
+
+4.42 2023-12-13 - Small Bugs Fixed.
+
+4.41 2023-12-08 - Small Bugs Fixed.
+
+4.40 2023-12-07 - Improved Plugins abandoned control.
+
+4.39 2023-11-04 - Small Bugs Fixed.
+
+4.38 2023-10-27 - Small Bugs Fixed.
+
+4.37 2023-10-26 - Small Bugs Fixed.
+
+4.36 2023-10-16 - Improved Catch Javascript Errors.
+
+4.35 2023-09-27 - Added Nonce to Scan Form to Improve Security.
+
+4.33/34 2023-08-24 - Help Improvements.
+
+4.30/32 2023-08-23 - Help Improvements.
+
+4.29 2023-07-15 - Help Improvements.
+
+4.28 2023-03-07 - Help Improvements.
+
+4.27 2022-12-03 - Small Improvements.
+
+4.25/26 2022-11-29 -  Small Improvements.
+
+4.22 to 4.24 2022-11-25 -  Small Improvements.
+
+4.21 2022-11-23 -  Small Improvements.
+
+4.20 2022-11-14 -  Improved Security.
+
+4.19 2022-06-01 -  Fixed small bug at Feedbak Form.
+
+4.17-18 2022-05-20 -  Fixed small bug in check json api.
+
+4.16 2022-05-19 -  Fixed small bug in check plugins.
+
+4.15 2022-05-11 -  Minor Improvements.
+
+4.14 2022-05-05 -  Fixed issue to load rules to database.
+
+4.13 2022-05-05 -  Minor Improvements.
+
+4.12 2022-04-29 -  Minor Improvements.
+
+4.11 2022-04-28 -  Minor Improvements.
+
+4.10 2022-04-28 -  Multilanguage enabled and small improvements.
+
+4.09 2022-04-18 -  Improved Scan 
+
+4.07/4.08 2022-04-17 -  Improved Dashboard 
+
+4.05/4.06 2022-04-08 -  Small Bug Fixed at populate database. 
+
+4.04 2022-03-25 -  Small Bug Fixed 
+
+4.01/4.02/4.03 2022-03-24 -  Small Bug Fixed 
+
+4.00 2022-03-24 -  Improved Security 
+
+3.42 2022-03-14 -  Small Bug Fixed 
+
+3.41 2022-03-14 -  Improved Security 
+
+3.40 2022-03-10 -  Fixed Small bug at login 
+
+3.39 2022-01-24 -  Fixed Small bug at login 
+
+3.38 2022-01-22 -  Minor Improvements add field xmlrpc
+
+3.37 2022-01-20 -  Minor Improvements
+
+3.36 2022-01-07 -  Minor Improvements
+
+3.35 2022-01-05 -  Minor Improvements
+
+3.34 2021-12-29 -  Minor Improvements
+
+3.33 2021-12-29 -  Minor Improvements
+
+3.32 2021-12-29 -  Minor Improvements
+
+3.31 2021-12-07 -  Minor Improvements
+
+3.30 2021-11-19 -  Minor Improvements
+
+3.29 2021-11-18 -  Minor Improvements
+
+3.28 2021-10-21 -  Improved Scanner
+
+3.27 2021-10-19 -  Improved Help
+
+3.26 2021-09-23 -  Minor Improvements
+
+3.25 2021-07-02 -  Improved check integrity of plugin files and others.
+
+3.24 2021-05-31 -  Improved HTTP Tools.
+
+3.23 2021-05-26 -  Improved Notification email filter.
+
+3.22 2021-05-26 -  Fixed Scan issue when user has customized table prefix.
+
+3.21 2021-05-25 -  Improved Notifications and http tools.
+
+3.20 2021-05-12 -  Removed warning from central.
+
+3.19 2021-05-11 -  Minor bug fixed on firewall.
+
+3.18 2021-05-10 -  Removed CORS header to avoid PHP warning.
+
+3.17 2021-05-03 -  Minor Improvements.
+
+3.16 2021-04-29 -  Minor changes to avoid conflict with other malware scan
+
+3.15 2021-04-29 -  Added Anti Hacker Free Central
+
+3.14 2021-04-27 -  Minor https improvements.
+
+3.13 2021-04-17 -  Minor https improvements.
+
+3.12 2021-04-10 -  Improved compatibility.
+
+3.11 2021-04-09 -  Improved charts and removed version control.
+
+3.10 2021-04-09 -  Improved whitelist.
+
+3.9  2021-04-06 -  Fixed small bug on activation.
+
+3.8  2021-04-06 -  Improved notifications and alerts. 
+
+3.7  2021-04-05 -  Improved notifications and alerts. 
+
+3.6  2021-04-01 -  Adjustment to sync with WordPress.
+
+3.5  2021-04-01 -  Added Scan to Pages, Posts and Comments.
+
+3.4  2021-03-29 -  Improved Login.
+
+3.3  2021-03-28 -  Increased size of the scan window.
+
+3.2  2021-03-27 -  Added Ruler file.
+
+3.1  2021-03-27 -  Added Scan for malware feature.
+
+2.82 2021-03-03 -  Improved Memory Management.
+
+2.81 2021-02-26 -  Improved httptools management.
+
+2.80 2021-02-23 -  Added Google safe browsing check, root folder files and themes/plugins deactivated, added more httptools.
+
+2.79 2021-01-31 -  Minor Improvements.
+
+2.78 2021-01-31 -  Removed Warning message.
+
+2.77 2021-01-31 -  Improved update plugin index.
+
+2.76 2021-01-31 -  Improved update plugin index.
+
+2.75 2021-01-31 -  Increased table HTTP TOOLS and fixed error on write table fingerprint.
+
+2.74 2021-01-24 -  Fixed error on write table fingerprint.
+
+2.73 2021-01-20 -  Improved Notification emails.
+
+2.72 2021-01-10 -  Minor Improvements.
+
+2.71 2021-01-09 -  Minor Improvements.
+
+2.70 2020-12-21 -  Improved Search Engine Bot detect.
+
+2.69 2020-12-12 -  Improved compatibility with cache plugins.
+
+2.68 2020-12-09 -  Added (optional) block to Application Password.
+
+2.67 2020-11-30 -  Improvements on Visits Log and login block.
+
+2.66 2020-11-18 -  Improvements on dashboard.
+
+2.65 2020-11-17 -  Improved Update of table tor.
+
+2.64 2020-11-17 -  Improved Creation of table tor.
+
+2.63 2020-11-09 -  Included Limiting 404.
+
+2.62 2020-10-28 -  Improved Security.
+
+2.61 2020-10-18 -  Add View Table Blocked Visits, included Block Blank User Agent, Block HTTP Tools.
+
+2.60 2020-07-15 -  Improved TOR blocking.
+
+2.59 2020-04-07 -  Small Improvements.
+
+2.58 2020-03-29 -  Added Tor Filter (Premium Version).
+
+2.57 2020-02-20 -  Small Improvements.
+
+2.56 2020-02-10 -  Removed 4 characters message when activate.
+
+2.55 2020-02-10 -  Improved Dashboard.
+
+2.54 2020-01-02 -  Improved Dashboard.
+
+2.53 2019-12-25 -  Improved Database Creation.
+
+2.52 2019-12-20 -  Improved Memory Management.
+
+2.51 2019-12-10 -  Improved Dashboard Graph Type.
+
+2.49/2.50 2019-12-07 -  Improved Dashboard Graph Type.
+
+2.48 2019-12-06 -  Improved Dashboard with more info.
+
+2.47 2019-11-25 -  Fixed Small bug in database of record visits.
+
+2.46 2019-11-19 -  Created Premium Version with more features.
+
+2.45 2019-11-01 -  Improved Settings.
+
+2.44 2019-10-23 -  Improved Dashboard.
+
+2.43 2019-09-11 -  Improved Help.
+
+2.42 2019-09-10 -  Improved Help.
+
+2.41 2019-09-02 -  Added Protection from plugins and themes with vulnerabilities.
+
+2.40 2019-07-24 -  Improved email about new plugim installed.
+
+2.39 2019-07-23 -  Allow to block comments in media page.
+
+2.38 2019-07-05 -  Improved Help and Documentation.
+
+2.37 2019-05-15 -  Improved Site Health Feature.
+
+2.36 2019-05-06 -  Block All Feeds to avoid bots exploit.
+
+2.35 2019-04-23 -  Block User Enumeration.
+
+2.34 2019-04-01 -  Hidyng WordPress Version Information.
+
+2.33 2019-03-23 -  Improved Low Memory Help Messages.
+
+2.32 2019-03-13 -  Improved Dashboard and added Fix to low memory issue.
+
+2.31 2019-02-28 -  Improved Dashboard and added Fix to low memory issue.
+
+2.30 2019-01-24 -  Improved Help.
+
+2.29 2019-01-22 -  Improved Help.
+
+2.28 2019-01-18 -  Included Dashboard and now Forewall exit with 403 Forbidden Error.
+
+2.27 2018-12-26 -  Improved Firewall.
+
+2.26 2018-12-26 -  Added Firewall.
+
+2.25 2018-08-08 -  Improved Help.
+
+2.24 2018-01-05 -  Improved Security.
+
+2.23 2018-01-05 -  Improved Security.
+
+2.22 2018-01-04 -  Improved Security.
+
+2.21 2017-12-23 -  Improved Security.
+
+2.20 2017-12-10 -  Improved Security.
+
+2.19 2017-12-09 -  Improved Security.
+
+2.18 2017-12-05 -  Improved Security.
+
+2.17 2017-08-15 -  Help and Feedback improved.
+
+2.16 2017-07-06 -  Fixed minor bug at notification emails
+
+2.15 2017-06-09 -  Tested With WordPress 4.8
+
+2.14 2017-05-25 -  eMail Message Notifications improved.
+
+2.13 2017-04-12 -  Security Improvement.
+
+2.12 2017-04-11 -  Improved feedback System.
+
+2.11 2017-04-05 -  Improved Help System.
+
+2.10 2017-03-09 -  Improved Help and Start Up page.
+
+2.09 2017-02-13 -  Add WordPress Debug enabled warning, disable edit file at dashboard and replace inscure login error message.
+
+2.08 2017-01-30 -  Option to Set WordPress to automatically download and install themes and plugin updates.
+
+2.07 2017-01-26 -  Minor Improvements at Help.
+
+2.06 2017-01-25 -  Included language file.
+
+2.05 2017-01-06 -  Improved Help. 
+
+2.04 2016-12-17 -  Improved the procedure to get IP Address. 
+
+2.03 2016-12-13 -  Disable Json WordPress Rest API (also new WordPress 4.7 Rest API). 
+
+2.02 2016-12-05 - Minor Improvements.
+
+2.01 2016-09-30 - Minor Improvements.
+
+2.0 2016-09-02 - Add email alert when install new plugin or antihacker plugin is deactivated.
+
+1.9 2016-07-08 - Security improvements.
+
+1.8 2016-06-30 - Improved the email message.
+
+1.7 2016-06-29 - Updated the Screenshot image.
+
+1.6 2016-06-29 - Renamed some functions to avoid conflict.
+
+1.5 2016-05-30 - Included Option to disable only PingBack xml-rpc API.
+
+1.5 2016-05-30 - Included Option to disable only PingBack xml-rpc API.
+
+1.4 2016-05-27 - Included Option to disable xml-rpc API.
+
+1.3 2016-05-05 - Renamed some functions to avoid conflits.
+
+1.2 2016-04-30 - Added more features.
+
+1.1 2016-04-18 - Added On Line Start Up Guide, improved design.
+
+1.0 2015-10-18 - Initial Release.
